@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)http://127.0.0.1:5501/real%20wedsite/realwebside/about.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>About Forests</title>
+  <link rel="stylesheet" href="./Ngawang Karma Rabgyel_files/style.css">
+</head>
+<body>
+
+<nav>
+  <a href="http://127.0.0.1:5501/real%20wedsite/realwebside/index.html">Home</a>
+  <a href="http://127.0.0.1:5501/real%20wedsite/realwebside/about.html">About</a>
+  <a href="http://127.0.0.1:5501/real%20wedsite/realwebside/benefits.html">Benefits</a>
+  <a href="http://127.0.0.1:5501/real%20wedsite/realwebside/gallery.html">Gallery</a>
+  <a href="http://127.0.0.1:5501/real%20wedsite/realwebside/contact.html">Contact</a>
+</nav>
+
+<section>
+  <h2>About Forests</h2>
+  <div style="display:flex; gap:30px; flex-wrap:wrap; align-items:center; margin-top:20px;">
+    <img src="./Ngawang Karma Rabgyel_files/photo-1501785888041-af3ef285b470" style="width:400px; border-radius:10px;">
+    <p>
+      Forests are essential ecosystems that support life on Earth.
+      They produce oxygen, store carbon, and provide homes for millions of species.Forest give us wood to build houses.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Forest Nature Website</p>
+</footer>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
